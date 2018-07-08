@@ -1,4 +1,5 @@
 stages:
+invalid
 - name: build
   steps:
   - runScriptConfig:
