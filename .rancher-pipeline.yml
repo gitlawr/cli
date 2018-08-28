@@ -4,3 +4,4 @@ stages:
   - runScriptConfig:
       image: busybox
       shellScript: echo hihigda
+
