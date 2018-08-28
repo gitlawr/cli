@@ -146,5 +146,8 @@ func ask(question model.Question) string {
 
 func (f *QuestionLookup) Variables() map[string]string {
 	// TODO: precedence
+	if f.parent == nil {
+		return f.variables
+	}
 	return rUtils.MapUnion(f.variables, f.parent.Variables())
 }
